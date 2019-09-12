@@ -1,7 +1,7 @@
 all <- read.csv("~/Box Sync/R_Scripts&Data/20171218JAP_iceberg/R-output/allMASTER.csv", header = TRUE, stringsAsFactors = FALSE)
-pt <- read.csv("~/Box Sync/R_Scripts&Data/20190910JAP_MolMassCalc/20190822JAP_periodictable.csv", header = TRUE, stringsAsFactors = FALSE)
+pt <- read.csv("~/Box Sync/R_Scripts&Data/MolMassCalc/20190822JAP_periodictable.csv", header = TRUE, stringsAsFactors = FALSE)
 pt$monoisotopic.mass <- as.numeric(substring(pt$monoisotopic.mass, 1, 6))
-adducts <- read.csv("~/Box Sync/R_Scripts&Data/20190910JAP_MolMassCalc/20190822JAP_adducts.csv", header = TRUE, stringsAsFactors = FALSE)
+adducts <- read.csv("~/Box Sync/R_Scripts&Data/MolMassCalc/20190822JAP_adducts.csv", header = TRUE, stringsAsFactors = FALSE)
 f <- list()
 
 #extracts formula, parses element and number of atoms into lists
